@@ -263,3 +263,15 @@ button:hover, a:hover {
   transition: transform 0.2s;
 }
 
+/* 最初は透明で少し下にずらしておく */
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+/* 画面に入ったら元の位置＆透明度1に */
+.scroll-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
