@@ -4,9 +4,9 @@ body {
   text-align: center; 
   background: linear-gradient(
     to bottom,
-    #f5c898 0%,
-    #f8d9b0 50%,
-    #f6bfa3 100%
+  #a0c4ff 0%, 
+  #bdb2ff 50%,
+  #ffc6ff 100%
   );
 }
 header { padding: 1em; }
