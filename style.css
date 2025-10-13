@@ -197,3 +197,69 @@ header {
     max-width: 100%;
   }
 }
+/* 背景グラデーションをゆっくり動かす */
+body { 
+  font-family: sans-serif; 
+  margin: 0; 
+  text-align: center; 
+  background: linear-gradient(
+    to bottom,
+    #a0c4ff 0%, 
+    #bdb2ff 50%, 
+    #ffc6ff 100%
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ヘッダー画像にホバーで少し拡大 */
+header img, .logo {
+  transition: transform 0.5s ease;
+}
+header img:hover, .logo:hover {
+  transform: scale(1.05);
+}
+
+/* パスタ画像にホバーで浮かせる */
+.pasta-small {
+  width: 45%;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pasta-small:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* 文字フェードインアニメーション */
+.pasta-text, .catch1, .catch2, h2 {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* ボタンやリンクが光るような効果 */
+button, a {
+  transition: all 0.3s ease;
+}
+button:hover, a:hover {
+  transform: scale(1.1);
+  color: #e63946;
+}
+
+/* スクロールでパララックス効果 */
+.pasta-text {
+  position: relative;
+  transition: transform 0.2s;
+}
+
