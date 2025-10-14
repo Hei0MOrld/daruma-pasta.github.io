@@ -1,9 +1,4 @@
-body { 
-  font-family: sans-serif; 
-  margin: 0; 
-  text-align: center; 
-  background: #ffffff 
-}
+
 header { padding: 1em; }
 header img { height: 800px; }
 img.main { 
@@ -193,24 +188,12 @@ header {
   }
 }
 /* 背景グラデーションをゆっくり動かす */
-body { 
-  font-family: sans-serif; 
-  margin: 0; 
-  text-align: center; 
-  background: linear-gradient(
-    to bottom,
-    #a0c4ff 0%, 
-    #bdb2ff 50%, 
-    #ffc6ff 100%
-  );
-  background-size: 400% 400%;
-  animation: gradientShift 15s ease infinite;
-}
-
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+body {
+  font-family: sans-serif;
+  margin: 0;
+  text-align: center;
+  background-color: #ffffff; /* ← 白背景 */
+  color: #000000; /* 文字は黒 */
 }
 
 /* ヘッダー画像にホバーで少し拡大 */
