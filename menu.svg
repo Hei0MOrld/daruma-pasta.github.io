@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 768">
+  <!-- Generator: Adobe Illustrator 29.8.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 2)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+      }
+
+      .st1 {
+        font-family: HiraMinProN-W3-83pv-RKSJ-H, 'Hiragino Mincho ProN';
+        font-size: 100px;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect x="171.73" y="111.75" width="676.65" height="102.34"/>
+    <path d="M847.88,112.25v101.34H172.23v-101.34h675.65M848.88,111.25H171.23v103.34h677.65v-103.34h0Z"/>
+  </g>
+  <g>
+    <rect class="st0" x="162.54" y="319.7" width="698.92" height="128.6"/>
+    <path d="M853.46,327.7v112.6H170.54v-112.6h682.92M869.46,311.7H154.54v144.6h714.92v-144.6h0Z"/>
+  </g>
+  <g>
+    <rect x="175.62" y="553.91" width="676.65" height="102.34"/>
+    <path d="M851.77,554.41v101.34H176.12v-101.34h675.65M852.77,553.41H175.12v103.34h677.65v-103.34h0Z"/>
+  </g>
+  <text class="st1" transform="translate(296.55 421.85)"><tspan x="0" y="0">Menu</tspan></text>
+  <text/>
+  <text/>
+</svg>

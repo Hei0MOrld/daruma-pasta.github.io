@@ -286,3 +286,19 @@ header {
   height: auto;    /* 縦横比キープ */
   display: block;  /* 不要な隙間を消す */
 }
+
+header {
+  display: flex;
+  justify-content: space-between; /* 左右に配置 */
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 60px; /* ロゴの高さ調整 */
+}
+
+.menu-icon {
+  height: 30px;
+  cursor: pointer;
+}
