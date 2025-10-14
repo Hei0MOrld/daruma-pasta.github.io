@@ -45,6 +45,12 @@ header {
   transition: transform 0.3s ease;
 }
 
+.logo {
+  height: 60px;       /* 高さはそのまま */
+  margin-left: 20px;  /* 左側に余白を作って右にずらす */
+}
+
+
 .logo:hover {
   transform: scale(1.05);
 }
