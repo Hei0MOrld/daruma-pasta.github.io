@@ -2,12 +2,7 @@ body {
   font-family: sans-serif; 
   margin: 0; 
   text-align: center; 
-  background: linear-gradient(
-    to bottom,
-  #ffffff 0%, 
-  #ffffff 50%,
-  #ffffff 100%
-  );
+  background: #ffffff 
 }
 header { padding: 1em; }
 header img { height: 800px; }
@@ -17,10 +12,10 @@ img.main {
   margin: 1em 0; 
 }
 section { padding: 1em; }
-h2 { color: #e63946; } 
+h2 { color: #000000; } 
 p.catch { 
   font-family: "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MSP明朝", "MS PMincho", serif;
-  color:#f7079b; 
+  color:#000000; 
   font-weight:bold; 
   font-size:3em; 
   margin:0.5em 0;
@@ -43,7 +38,7 @@ footer {
   border-top: 3px solid #000000; 
   padding: 1em; 
   font-size: 0.9em; 
-  color: #333; 
+  color: #000000; 
   margin-top: 2em;
 }
 
