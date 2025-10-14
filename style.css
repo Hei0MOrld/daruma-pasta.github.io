@@ -1,311 +1,174 @@
+/* =====================================
+   基本リセットとボディ
+===================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: "Sawarabi Mincho", "Yu Mincho", "Hiragino Mincho Pro", serif;
+  background-color: #ffffff;
+  color: #000;
+  text-align: center;
+}
+
+/* =====================================
+   ヘッダー
+===================================== */
 header {
   width: 100%;
-  background-color: #ffffff; /* 背景白 */
-  padding: 0;
-  margin: 0;
-}
-
-.header-img {
-  width: 100%;          /* 横いっぱい */
-  height: auto;          /* 高さは自動調整 */
-  display: block;        /* スマホで余白消す */
-}
-
-img.main { 
-  max-width: 100%; 
-  border-radius: 50px; 
-  margin: 1em 0; 
-}
-section { padding: 1em; }
-h2 { color: #000000; } 
-p.catch { 
-  font-family: "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MSP明朝", "MS PMincho", serif;
-  color:#000000; 
-  font-weight:bold; 
-  font-size:3em; 
-  margin:0.5em 0;
-}
-
-/* サイズや色を変えた複数のキャッチ用 */
-.catch1 { font-size:2em; color:#000000; }
-.catch2 { font-size:3em; color:#000; }
-
-/* スマホ対応 */
-@media (max-width: 600px) {
-  .catch1 { font-size:3em; }
-  .catch2 { font-size:2.5em; }
-}
-
-
-iframe { width: 100%; height: 300px; border: none; margin-top: 1em; }
-footer { 
-  background: rgba(255, 255, 255, 0.8); 
-  border-top: 3px solid #000000; 
-  padding: 1em; 
-  font-size: 0.9em; 
-  color: #000000; 
-  margin-top: 2em;
-}
-
-.pasta-row {
+  background-color: #ffffff;
+  padding: 10px 20px;
   display: flex;
-  justify-content: center; /* 真ん中揃え */
-  gap: 10px; /* 画像の間隔 */
-  margin: 2em 0;
-}
-
-.pasta-small {
-  width: 45%; /* 少し小さめに調整 */
-  border-radius: 12px;
-}
-
-header {
-  background-color: #707070; /* 薄いグレー */
-  padding: 0.5em 2em;
-  border-bottom: 2px solid #ffffff;
-}
-
-.header-inner {
-  display: flex;
-  justify-content: space-between; /* 左右に配置 */
-  align-items: center; /* 縦方向の中央揃え */
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.site-title {
-  font-size: 2em;
-  color: #000000;
-  margin: 0;
-  font-family: "Sawarabi Mincho", "Yu Mincho", "Hiragino Mincho Pro", serif;
-}
-
-.logo {
-  height: 200px; /* ロゴの大きさ調整 */
-}
-
-/* ヘッダー全体 */
-header {
-  background-color: #ffffff; /* 薄いブラウン系 */
-  padding: 4em 3em; /* 高さをアップ（上下2em） */
-  border-bottom: 3px solid #262626;
-}
-
-/* ヘッダー内の配置 */
-.header-inner {
-  display: flex;
-  justify-content: center; /* 真ん中寄せ */
+  justify-content: center;
   align-items: center;
-  gap: 1.5em; /* タイトルとロゴの間隔 */
+  border-bottom: 2px solid #262626;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;  /* 左右に配置 */
+  align-items: center;
+  width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
+  flex-wrap: nowrap;               /* 横並びで折り返さない */
 }
 
-/* ヘッダと写真の間に空白 */
-.spacer {
-  height: 60px;
-}
-
-/* タイトル文字 */
-.site-title {
-  font-size: 2.6em; /* 文字を少し大きく */
-  color: #000000;
-  margin: 0;
-  font-family: "Sawarabi Mincho","YuMincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", serif;
-  letter-spacing: 0.05em;
-}
-
-/* ロゴ画像 */
+/* ロゴ */
 .logo {
-  height: 90px; /* ロゴを大きめに */
-  width: auto;
+  width: 70%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
-/* スマホ対応 */
-@media (max-width: 600px) {
-  .header-inner {
-    flex-direction: column; /* 縦並びにする */
-    text-align: center;
-    gap: 0.5em;
-  }
-  .site-title {
-    font-size: 2.5em;
-  }
-  .logo {
-    height: 70px;
-    margin-top: 0.5em;
-  }
-  .pasta-title,
-  .pasta-subtitle {
-    font-size: 24px; /* 31pxだとスマホで大きすぎるから少し小さめに */
-  }
-  .pasta-text {
-    margin-top: 5px;
-    line-height: 1.7;
-  }
-  /* ←ここまで追加 */
-}
-
-/* 写真下テキスト */
-.pasta-text {
-  text-align: center;
-  margin-top: 10px; /* 少し近づけた */
-  line-height: 1.8; /* 行間をやや広め */
-}
-
-.pasta-title {
-  font-size: 31px;
-  font-weight: bold;
-  color: #000;
-  margin: 0;
-  font-family: "Sawarabi Mincho", "Yu Mincho", serif;
-}
-
-.pasta-subtitle {
-  font-size: 31px;
-  color: #000;
-  margin: 10px 0 0 0;
-  font-family: "Sawarabi Mincho", "Yu Mincho", serif;
-}
-
-.pasta-video {
-  width: 100%;        /* 幅は画面に合わせる */
-  max-width: 600px;   /* 最大幅600pxに制限 */
-  border-radius: 12px; /* 角丸にする */
-  margin-top: 20px;    /* テキストとの間隔 */
-}
-
-/* スマホ対応 */
-@media (max-width: 600px) {
-  .pasta-video {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-.pasta-video {
-  width: 100%;        /* 幅は画面に合わせる */
-  max-width: 600px;   /* 最大幅600pxに制限 */
-  border-radius: 12px; /* 角丸にする */
-  margin-top: 20px;    /* テキストとの間隔 */
-}
-
-/* スマホ対応 */
-@media (max-width: 600px) {
-  .pasta-video {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-/* 背景グラデーションをゆっくり動かす */
-body {
-  font-family: sans-serif;
-  margin: 0;
-  text-align: center;
-  background-color: #ffffff; /* ← 白背景 */
-  color: #000000; /* 文字は黒 */
-}
-
-/* ヘッダー画像にホバーで少し拡大 */
-header img, .logo {
-  transition: transform 0.5s ease;
-}
-header img:hover, .logo:hover {
+.logo:hover {
   transform: scale(1.05);
 }
 
-/* パスタ画像にホバーで浮かせる */
+/* メニューアイコン */
+.menu-icon {
+  width: 20%;
+  max-width: 100px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+  transform: scale(1.1);
+}
+
+/* =====================================
+   ギャラリー・画像
+===================================== */
+.pasta-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 2em 0;
+  flex-wrap: wrap;
+}
+
 .pasta-small {
   width: 45%;
+  max-width: 300px;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .pasta-small:hover {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* 文字フェードインアニメーション */
-.pasta-text, .catch1, .catch2, h2 {
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-  animation-delay: 0.3s;
-}
-
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
-
-/* ボタンやリンクが光るような効果 */
-button, a {
-  transition: all 0.3s ease;
-}
-button:hover, a:hover {
-  transform: scale(1.1);
-  color: #e63946;
-}
-
-/* スクロールでパララックス効果 */
+/* =====================================
+   テキスト系
+===================================== */
 .pasta-text {
-  position: relative;
-  transition: transform 0.2s;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.8;
 }
 
-/* 最初は透明で少し下にずらしておく */
+.pasta-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.pasta-subtitle {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+/* キャッチコピー */
+.catch1 { font-size:2em; color:#000; }
+.catch2 { font-size:2.5em; color:#000; }
+
+/* =====================================
+   ビデオ
+===================================== */
+.pasta-video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/* =====================================
+   フッター
+===================================== */
+footer {
+  background: rgba(255, 255, 255, 0.8);
+  border-top: 3px solid #000;
+  padding: 1em;
+  font-size: 0.9em;
+  color: #000;
+  margin-top: 2em;
+}
+
+/* =====================================
+   スクロールフェードイン
+===================================== */
 .scroll-fade {
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.8s ease;
 }
 
-/* 画面に入ったら元の位置＆透明度1に */
 .scroll-fade.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* 横長バナー風ヘッダー */
-header {
-  background-color: #ffffff;  /* 背景白のまま */
-  padding: 0;                 /* 余白ナシにして高さを詰める */
-  margin: 0;
-  border-bottom: none;        /* 線がいらなければ削除、残したければコメントアウト */
-}
-
-.header-inner {
-  display: flex;
-  justify-content: left;    /* 左寄せ */
-  align-items: center;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.logo {
-  width: 100%;     /* 画面幅いっぱい */
-  height: auto;    /* 縦横比キープ */
-  display: block;  /* 不要な隙間を消す */
-}
-
-header {
-  display: flex;
-  justify-content: space-between; /* 左右に配置 */
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.logo {
-  height: 60px; /* ロゴの高さ調整 */
-}
-
-.menu-icon {
-  height: 30px;
-  cursor: pointer;
-}
-
-.header-img {
-  width: 100%;
-  height: auto; /* 縦横比を保持 */
-  max-height: 120px; /* これで縦が長すぎないように */
-  display: block;
+/* =====================================
+   レスポンシブ（スマホ）
+===================================== */
+@media (max-width: 600px) {
+  .header-inner {
+    justify-content: space-between; /* 左右に配置 */
+  }
+  .logo {
+    width: 60%;
+  }
+  .menu-icon {
+    width: 25%;
+  }
+  .pasta-title {
+    font-size: 1.5em;
+  }
+  .pasta-subtitle {
+    font-size: 1.2em;
+  }
+  .pasta-small {
+    width: 80%;
+    max-width: none;
+  }
+  .pasta-video {
+    max-width: 100%;
+  }
 }
