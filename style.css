@@ -264,3 +264,25 @@ button:hover, a:hover {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* 横長バナー風ヘッダー */
+header {
+  background-color: #ffffff;  /* 背景白のまま */
+  padding: 0;                 /* 余白ナシにして高さを詰める */
+  margin: 0;
+  border-bottom: none;        /* 線がいらなければ削除、残したければコメントアウト */
+}
+
+.header-inner {
+  display: flex;
+  justify-content: center;    /* 中央寄せ */
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100%;     /* 画面幅いっぱい */
+  height: auto;    /* 縦横比キープ */
+  display: block;  /* 不要な隙間を消す */
+}
