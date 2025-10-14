@@ -302,3 +302,10 @@ header {
   height: 30px;
   cursor: pointer;
 }
+
+.header-img {
+  width: 100%;
+  height: auto; /* 縦横比を保持 */
+  max-height: 120px; /* これで縦が長すぎないように */
+  display: block;
+}
