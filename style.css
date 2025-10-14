@@ -39,8 +39,8 @@ p.catch {
 
 iframe { width: 100%; height: 300px; border: none; margin-top: 1em; }
 footer { 
-  background: rgba(207, 153, 73, 0.8); 
-  border-top: 3px solid #5b0008; 
+  background: rgba(255, 255, 255, 0.8); 
+  border-top: 3px solid #000000; 
   padding: 1em; 
   font-size: 0.9em; 
   color: #333; 
@@ -60,9 +60,9 @@ footer {
 }
 
 header {
-  background-color: #f2f2f2; /* 薄いグレー */
+  background-color: #707070; /* 薄いグレー */
   padding: 0.5em 2em;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid #ffffff;
 }
 
 .header-inner {
@@ -75,7 +75,7 @@ header {
 
 .site-title {
   font-size: 2em;
-  color: #e63946;
+  color: #000000;
   margin: 0;
   font-family: "Sawarabi Mincho", "Yu Mincho", "Hiragino Mincho Pro", serif;
 }
@@ -86,9 +86,9 @@ header {
 
 /* ヘッダー全体 */
 header {
-  background-color: #c48a64; /* 薄いブラウン系 */
+  background-color: #ffffff; /* 薄いブラウン系 */
   padding: 4em 3em; /* 高さをアップ（上下2em） */
-  border-bottom: 3px solid #020202;
+  border-bottom: 3px solid #262626;
 }
 
 /* ヘッダー内の配置 */
