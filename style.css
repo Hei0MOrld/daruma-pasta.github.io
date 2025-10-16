@@ -102,7 +102,7 @@ header {
 
 .map-svg {
   width: 80%;       /* 好きなサイズに調整 */
-  max-width: 600px;
+  max-width: 400px;
   display: block;
   margin: 10px auto; /* 上下の余白と中央揃え */
 }
