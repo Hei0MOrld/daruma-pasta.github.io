@@ -92,13 +92,8 @@ header {
   align-items: center;
 }
 
-.bunbun-logo {
-  width: 400px;   /* 好きなサイズに調整 */
-  height: auto;
-  margin: 5px auto 15px auto;
-  display: block; /* 画像の場合はこれで中央揃え */
 
-}
+
 
 .map-svg {
   width: 80%;       /* 好きなサイズに調整 */
