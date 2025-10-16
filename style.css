@@ -178,7 +178,7 @@ footer {
   width: 300px;  /* 好きなサイズに調整 */
   height: auto;
   display: block;
-  margin: 10px auto 20px;  /* 上下の余白 */
+  margin: 5px auto 5px;  /* 上下の余白 */
 }
 
 
