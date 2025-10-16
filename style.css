@@ -212,6 +212,10 @@ footer {
   display: block;
   margin: 5px auto 15px; /* 上下の余白と中央揃え */
 }
+.tenmei-container {
+  text-align: center;
+  margin-top: 5px;
+}
 
 
 
