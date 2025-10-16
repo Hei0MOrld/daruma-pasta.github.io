@@ -145,6 +145,24 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+/* =====================================
+   loro調整
+===================================== */
+
+.logo-wrap {
+  display: inline-block;
+  margin-top: 1em; /* 縁起パスタから少し下げる */
+}
+
+.logo-mark {
+  display: block;
+  width: 200px;    /* 好きなサイズに調整 */
+  height: auto;
+}
+
+
+
+
 
 /* =====================================
    レスポンシブ（スマホ）
