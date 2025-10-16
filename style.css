@@ -149,31 +149,21 @@ header {
    フッター
 ===================================== */
 footer {
-  background: rgba(255, 255, 255, 0.8);
-  border-top: 3px solid #000;
-  padding: 1em;
-  font-size: 0.9em;
-  color: #000;
-  margin-top: 2em;
-}
-
-footer {
+  width: 100vw; /* ← 画面の横幅いっぱいに */
   background: rgba(255, 255, 255, 0.9);
   border-top: 3px solid #000;
-  padding: 1.5em 1em;
-  font-size: 0.9em;
+  padding: 2em 0; /* 上下の余白を広めに */
+  font-size: 1em; /* 少し文字も大きく */
   color: #000;
-  margin-top: 3em;
-  text-align: center;
+  text-align: center; /* 中央寄せ */
+  margin-top: 2em;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
-footer img {
-  width: 120px; /* スマホならこのくらい */
-  height: auto;
-  display: block;
-  margin: 0.5em auto;
-  opacity: 0.9;
-}
 
 
 /* =====================================
