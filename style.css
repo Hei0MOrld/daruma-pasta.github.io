@@ -173,6 +173,13 @@ footer {
   height: auto;
 }
 
+/* 文化祭1日目SVG */
+.bunkasai-logo {
+  width: 300px;  /* 好きなサイズに調整 */
+  height: auto;
+  display: block;
+  margin: 10px auto 20px;  /* 上下の余白 */
+}
 
 
 
