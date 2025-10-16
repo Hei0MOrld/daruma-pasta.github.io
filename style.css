@@ -69,42 +69,6 @@ header {
   transform: scale(1.1);
 }
 
-/* ======= ロゴセクション全体 ======= */
-.logo-section {
-  text-align: center;
-  margin: 2em 0;
-}
-
-/* 縁起パスタsvg */
-.engi-logo {
-  width: 60%;
-  max-width: 400px;
-  height: auto;
-  display: block;
-  margin: 0 auto 1em;
-}
-
-/* マークロゴ（logo.png）と“logo”ラベルの配置 */
-.logo-wrap {
-  position: relative;
-  display: inline-block;
-}
-
-.logo-mark {
-  width: 150px;
-  height: auto;
-}
-
-/* 左側に“logo”って出す */
-.logo-label {
-  position: absolute;
-  top: 0;
-  left: -40px; /* ロゴ画像の左に配置 */
-  font-size: 14px;
-  color: #000;
-  font-family: "Sawarabi Mincho", serif;
-}
-
 /* =====================================
    ギャラリー・画像
 ===================================== */
@@ -186,6 +150,28 @@ footer {
 .scroll-fade.visible {
   opacity: 1;
   transform: translateY(0);
+}
+/* =====================================
+   ロゴラベル（左上に"logo"表示）
+===================================== */
+.logo-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.logo-img {
+  width: 200px; /* 必要に応じて調整 */
+  height: auto;
+  display: block;
+}
+
+.logo-label {
+  position: absolute;
+  top: -20px;  /* 画像の外に出す高さ */
+  left: -30px; /* 画像の左に出す距離 */
+  font-size: 14px;
+  color: #000;
+  font-family: "Sawarabi Mincho", serif;
 }
 
 /* =====================================
