@@ -1,5 +1,5 @@
 /* =====================================
-   基本リセットとボディ
+   リセットと基本設定
 ===================================== */
 * {
   box-sizing: border-box;
@@ -9,7 +9,7 @@
 
 body {
   font-family: "Sawarabi Mincho", "Yu Mincho", "Hiragino Mincho Pro", serif;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #000;
   text-align: center;
 }
@@ -19,52 +19,56 @@ body {
 ===================================== */
 header {
   width: 100%;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 10px 20px;
+  border-bottom: 2px solid #262626;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid #262626;
 }
 
 .header-inner {
   display: flex;
-  justify-content: space-between;  /* 左右に配置 */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1000px;
-  flex-wrap: nowrap;               /* 横並びで折り返さない */
 }
 
-/* ロゴ（ヘッダー） */
 .logo {
   width: 70%;
   max-width: 600px;
   height: 60px;
-  display: block;
   margin-left: 20px;
   transition: transform 0.3s ease;
 }
+.logo:hover { transform: scale(1.05); }
 
-.logo:hover {
-  transform: scale(1.05);
-}
-
-/* メニューアイコン */
 .menu-icon {
   width: 20%;
   max-width: 100px;
-  height: auto;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-
-.menu-icon:hover {
-  transform: scale(1.1);
-}
+.menu-icon:hover { transform: scale(1.1); }
 
 /* =====================================
-   ギャラリー・画像
+   ロゴセクション
+===================================== */
+.logo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1em;
+}
+
+.logo-mark { width: 200px; height: auto; }
+.kaiun-logo { width: 300px; height: auto; }
+.bunkasai-logo { width: 300px; height: auto; margin: 5px auto; }
+
+/* =====================================
+   ギャラリー
 ===================================== */
 .pasta-gallery {
   display: flex;
@@ -72,6 +76,12 @@ header {
   gap: 10px;
   margin: 2em 0;
   flex-wrap: wrap;
+}
+
+.pasta-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pasta-small {
@@ -86,194 +96,88 @@ header {
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.pasta-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
-
-.map-svg {
-  width: 80%;       /* 好きなサイズに調整 */
-  max-width: 400px;
-  display: block;
-  margin: 10px auto; /* 上下の余白と中央揃え */
-}
-
-/* =====================================
-   テキスト系
-===================================== */
-.pasta-text {
-  text-align: center;
-  margin-top: 10px;
-  line-height: 1.8;
-}
-
-.pasta-title {
-  font-size: 2em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-}
-
-.pasta-subtitle {
-  font-size: 1.8em;
-  margin-bottom: 1em;
-}
-
-
 .bunbun-logo {
-  width: 400px;   /* 好きなサイズに調整 */
-  height: auto;
+  width: 400px;
   margin: 5px auto 15px auto;
-  display: block; /* 中央揃え */
-}
-
-
-/* キャッチコピー */
-.catch1 { font-size:2em; color:#000; }
-.catch2 { font-size:2.5em; color:#000; }
-
-/* =====================================
-   ビデオ
-===================================== */
-.pasta-video {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 12px;
-  margin-top: 20px;
-}
-
-/* =====================================
-   フッター
-===================================== */
-footer {
-  width: 100vw; /* ← 画面の横幅いっぱいに */
-  background: rgba(255, 255, 255, 0.9);
-  border-top: 3px solid #000;
-  font-size: 1em; /* 少し文字も大きく */
-  color: #000;
-  text-align: center; /* 中央寄せ */
-  margin-top: 2em;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
-
-
-
-/* =====================================
-   スクロールフェードイン
-===================================== */
-.scroll-fade {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.8s ease;
-}
-
-.scroll-fade.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-/* =====================================
-   logo周辺
-===================================== */
-
-.logo-wrap {
-  display: inline-block;
-  margin-top: 1em; /* 縁起パスタから少し下げる */
-}
-
-.logo-mark {
   display: block;
-  width: 200px;    /* 好きなサイズに調整 */
-  height: auto;
-}
-/* ロゴと開運文字を縦に配置 */
-.logo-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px; /* ロゴと開運文字の間の余白 */
 }
 
-/* 開運文字SVG */
-.kaiun-logo {
-  width: 300px; /* 好きなサイズに調整 */
-  height: auto;
-}
-
-/* 文化祭1日目SVG */
-.bunkasai-logo {
-  width: 300px;  /* 好きなサイズに調整 */
-  height: auto;
-  display: block;
-  margin: 5px auto 5px;  /* 上下の余白 */
-}
-/*店名の由来*/
+/* =====================================
+   店名部分
+===================================== */
 .tenmei-container {
   text-align: center;
-  margin-top: 0; /* 上の余白なし */
+  margin-top: 0;
 }
 
 .tenmei-logo {
-  width: 3600px;
+  width: 360px;
   height: auto;
   display: block;
-  margin: 0 auto; /* 中央揃え */
+  margin: 0 auto;
 }
 
 .tenmei1-logo {
   width: 360px;
   height: auto;
   display: block;
-  margin: 0 auto; /* Tenmeiの真下にピッタリ */
+  margin: 0 auto;
 }
-
-
-
 
 /* =====================================
-   レスポンシブ（スマホ）
+   動画
 ===================================== */
-@media (max-width: 600px) {
-  .header-inner {
-    justify-content: space-between; /* 左右に配置 */
-  }
-  .logo {
-    width: 60%;
-  }
-  .menu-icon {
-    width: 25%;
-  }
-  .pasta-title {
-    font-size: 1.5em;
-  }
-  .pasta-subtitle {
-    font-size: 1.2em;
-  }
-  .pasta-small {
-    width: 80%;
-    max-width: none;
-  }
-  .pasta-video {
-    max-width: 100%;
-  }
+.video-container {
+  margin: 30px auto;
 }
 
-/* ===========================
-インスタグラムのロゴのスタイル
-============================ */
+.pasta-video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+}
+
+/* =====================================
+   地図
+===================================== */
+.map-svg {
+  width: 80%;
+  max-width: 400px;
+  margin: 10px auto;
+  display: block;
+}
+
+/* =====================================
+   Instagram
+===================================== */
 .insta-icon {
-  width: 300px; /* 任意のサイズに調整 */
+  width: 300px;
   height: auto;
   margin-top: 10px;
   transition: transform 0.3s ease;
 }
+.insta-icon:hover { transform: scale(1.1); }
 
-.insta-icon:hover {
-  transform: scale(1.1); /* ホバー時に少し大きくなる */
+/* =====================================
+   フッター
+===================================== */
+footer {
+  width: 100vw;
+  background: rgba(255, 255, 255, 0.9);
+  border-top: 3px solid #000;
+  margin-top: 2em;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+}
+
+/* =====================================
+   レスポンシブ
+===================================== */
+@media (max-width: 600px) {
+  .logo { width: 60%; }
+  .menu-icon { width: 25%; }
+  .pasta-small { width: 80%; }
+  .pasta-video { max-width: 100%; }
 }
