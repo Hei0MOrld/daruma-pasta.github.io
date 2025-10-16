@@ -206,16 +206,25 @@ footer {
   margin: 5px auto 5px;  /* 上下の余白 */
 }
 /*店名の由来*/
-.tenmei-logo {
-  width: 400px; /* 好きなサイズに調整 */
-  height: auto;
-  display: block;
-  margin: 1px auto 10px; /* 上下の余白と中央揃え */
-}
 .tenmei-container {
   text-align: center;
-  margin-top: 5px;
+  margin-top: 0; /* 上の余白なし */
 }
+
+.tenmei-logo {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* 中央揃え */
+}
+
+.tenmei1-logo {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Tenmeiの真下にピッタリ */
+}
+
 
 
 
