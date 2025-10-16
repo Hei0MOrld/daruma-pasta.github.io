@@ -146,7 +146,7 @@ footer {
   transform: translateY(0);
 }
 /* =====================================
-   loro調整
+   logo周辺
 ===================================== */
 
 .logo-wrap {
@@ -157,6 +157,19 @@ footer {
 .logo-mark {
   display: block;
   width: 200px;    /* 好きなサイズに調整 */
+  height: auto;
+}
+/* ロゴと開運文字を縦に配置 */
+.logo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* ロゴと開運文字の間の余白 */
+}
+
+/* 開運文字SVG */
+.kaiun-logo {
+  width: 150px; /* 好きなサイズに調整 */
   height: auto;
 }
 
