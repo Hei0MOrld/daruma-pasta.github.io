@@ -95,7 +95,9 @@ header {
 .bunbun-logo {
   width: 400px;   /* 好きなサイズに調整 */
   height: auto;
-  margin-top: 5px auto 15px;
+  margin: 5px auto 15px auto;
+  display: block; /* 画像の場合はこれで中央揃え */
+
 }
 /* =====================================
    テキスト系
