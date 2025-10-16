@@ -232,3 +232,17 @@ footer {
     max-width: 100%;
   }
 }
+
+/* ===========================
+インスタグラムのロゴのスタイル
+============================ */
+.insta-icon {
+  width: 50px; /* 任意のサイズに調整 */
+  height: auto;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.insta-icon:hover {
+  transform: scale(1.1); /* ホバー時に少し大きくなる */
+}
