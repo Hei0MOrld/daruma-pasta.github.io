@@ -36,25 +36,19 @@ header {
   flex-wrap: nowrap;               /* 横並びで折り返さない */
 }
 
-/* ロゴ */
+/* ロゴ（ヘッダー） */
 .logo {
   width: 70%;
   max-width: 600px;
-  height: auto;
+  height: 60px;
   display: block;
+  margin-left: 20px;
   transition: transform 0.3s ease;
 }
-
-.logo {
-  height: 60px;       /* 高さはそのまま */
-  margin-left: 20px;  /* 左側に余白を作って右にずらす */
-}
-
 
 .logo:hover {
   transform: scale(1.05);
 }
-
 
 /* メニューアイコン */
 .menu-icon {
@@ -150,28 +144,6 @@ footer {
 .scroll-fade.visible {
   opacity: 1;
   transform: translateY(0);
-}
-/* =====================================
-   ロゴラベル（左上に"logo"表示）
-===================================== */
-.logo-wrap {
-  position: relative;
-  display: inline-block;
-}
-
-.logo-img {
-  width: 200px; /* 必要に応じて調整 */
-  height: auto;
-  display: block;
-}
-
-.logo-label {
-  position: absolute;
-  top: -20px;  /* 画像の外に出す高さ */
-  left: -30px; /* 画像の左に出す距離 */
-  font-size: 14px;
-  color: #000;
-  font-family: "Sawarabi Mincho", serif;
 }
 
 /* =====================================
